@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../styles/assets/pexels-danielabsi-952670.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Mother Container */
+.mother-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  min-width: 78vw;
+  background-color: #fafcfd;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  max-width: 80vw;
+  background-color: #9ac7f4;
+  position: relative;
+  border-radius: 20px;
+}
+
+/* Info Container */
+.info-container {
+  background-image: url('../styles/assets/1600648595618.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 8%;
+  left: 2%;
+  padding: 20px;
+  width: 55%;
+  height: 82%;
+  background-color: #f5f7f9;
+  color: #333;
+  font-size: 16px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Container Wrapper */
+.container-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  left: 30%;
+  gap: 20px;
+}
+
+.label-holder {
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+/* Webcam and Image Cards */
+.webcam-card, .image-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 70px 30px 40px 30px;
+  border: 1px solid #f6efef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.webcam {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Gradient Text */
+.text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  color:#f7d706 ;
+  /* background-image: linear-gradient(90deg,#f7d706,#f7d706 #f7d706); */
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+/* items labels */
+.item-label{
+  background-color: #6a6a65;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.item-label:hover{
+  transform: translate(1px, -2px) rotate(0deg);
+  background-color: #575753; /* Change background color on hover */
+  color: #fbfdfc; /* Change text color on hover */
+}
+
+#span-id{
+  position: relative;
+  margin: 10px 5px 5px 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fbfdfc;
+}
+
+#p-span-text{
+  padding: 3px 10px 3px 3px;
+  color: #fbfdfc;
+}
+
+
+/* Button Animation */
+.btn-ani {
+  background: transparent;
+  border: none;
+  position: relative;
+  width: 150px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.btn-back {
+  border-radius: 20px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.btn-text {  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: rgb(252 , 78 , 78);
+  color: #fff;
+  border: solid 2px black;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-ani:hover .btn-text {
+  transform: translate(5px, -1px) rotate(0.5deg);
+}
+
+.btn-ani:hover .btn-back {
+  transform: rotate(2deg);
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Animated Button */
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.animated-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.3s ease;
+  z-index: -1;
+  opacity: 0;
+}
+
+.animated-button:hover::before {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.animated-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Placeholder Container */
+.placeholder-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(171, 180, 177);
+}
+
+/* Webcam Placeholder */
+.camcontainer {
+  display: inline-block;
+  padding: 20px;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cam-gg {
+  font-size: 50px;
+}
+
+/* Image Container */
+.image-container {
+  width: 23rem;
+  max-width: 400px;
+  height: 300px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6c757d;
+}
+
+.image-container-fx img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .image-container {
+    width: 18rem;
+  }
+
+  .mother-container {
+    flex-direction: row;
+    min-height: 90vh;
+    min-width: 90vw;
+    align-items: self-start;
+  }
+
+  .main-container {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  .info-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    left: 22.5%;
+    width: 50%;
+    height: 10%;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .container-wrapper {
+    left: 0;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    width: 500px;
+  }
+
+  .webcam-card, .image-card {
+    position: relative;
+    max-width: 350px; 
+    padding: 20px;
+  }
+
+  .webcam-btn {
+    font-size: 14px;
+  }
+}
