@@ -1,6 +1,3 @@
-Here’s a polished README file for your object detection React application:
-
----
 
 # Object Detection React Application
 
