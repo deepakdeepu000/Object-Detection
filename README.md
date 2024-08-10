@@ -49,7 +49,10 @@ Ensure you have set up your AWS credentials and have the necessary permissions t
 
 Below is an example of the output after processing an image:
 
-![Example Output](path/to/your/example-output.png)
+![Example Output](example-output.png)
+
+![Example Output](example-output2.png)
+
 
 ## How to Include Images in README
 
