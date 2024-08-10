@@ -53,6 +53,8 @@ Below is an example of the output after processing an image:
 
 ![Example Output](example-output2.png)
 
+![Example Output](login.png)
+
 
 ## How to Include Images in README
 
