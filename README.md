@@ -56,24 +56,6 @@ Below is an example of the output after processing an image:
 ![Example Output](login.png)
 
 
-## How to Include Images in README
-
-To include an image in your README file, use the following syntax:
-
-```markdown
-![Alt Text](.images/image.png)
-```
-
-Replace `path/to/your/image.png` with the actual path to your image file.
-
 ## Contributing
 
 Contributions are welcome! If you have suggestions or improvements, please open an issue or create a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to replace the placeholders with actual paths and customize any sections as needed!
